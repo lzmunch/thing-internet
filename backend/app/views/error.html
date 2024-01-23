@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <p id="goat-message">Something went wrong :-( Did you enter the URL of a valid website? Sometimes the link redirects do not work perfectly. Please enter another website.</p>
+    <p id="goat-errors"></p>
+  </body>
+  <script type="text/javascript">
+    let data_json = {{data|tojson}}
+    console.log(data_json)
+    if ('error' in data_json){
+      if ('url' in data_json){
+        let msg = 'Something went wrong trying to get to "' +
+                  data_json['url'] + '".'
+        document.getElementById('goat-message').innerHTML = 
+      }
+      document.getElementById('goat-errors').innerHTML = 'Details: ' + data_json['error'];
+    }
+  </script>
+</html>

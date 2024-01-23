@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>THING INTERNET</title>
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://cdn.glitch.global/54aa6fec-cd76-41f7-b578-a5dcfd96ff68/1F440.svg?v=1705021152736"
+    />
+    <link rel="stylesheet" href="m.css" />
+    <script
+      src="https://code.jquery.com/jquery-2.2.1.min.js"
+      integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+      crossorigin="anonymous"
+    ></script>
+    <script src="iframeResizer.min.js"></script>
+  </head>
+  <body>
+    <div id="goat-browser-area">
+      <h1 id="goat-header"><span id="thing-text-1"></span> INTERNET BROWSER
+        <select name="thing" id="thing-select">
+          <option value="goat">🐐</option>
+          <option value="fish">🐟</option>
+          <option value="worm">🐛</option>
+          <option value="toaster">🍞</option>
+          <option value="internet">🕸️</option>
+        </select>
+      </h1>
+      <p id="goat-timestamp"></p>
+      <form id="goat-form">
+        <label for="goat-search-input" class="goat-label">human site:</label>
+        <input 
+          id="goat-search-bar"
+          type="text"
+          placeholder="https://www.some-url-that-exists.com"
+          name="goat-search-input"
+        />
+        <button id="search-btn" type="submit">go!</button>
+      </form>
+      <hr />
+      <!--       <button id="glitch-remix" href="https://glitch.com">Remix this in Glitch</button> -->
+      <div class="goat-label">through the eyes of the <span id="thing-text-2"></span>: <a id="debug-iframe" target="_blank" rel="noopener noreferrer"  href="https://goat-internet-backend.glitch.me">[debug]</a> </div>
+    </div>
+    
+    <div id="goat-content-container">
+      <div id="goat-content">
+        <div id="goat-placeholder" style="display:none;">
+          <p>Welcome to the Thing Browser!</p>
+          <p>1. pick a thing!!!!</p>
+          <p>2. type something into the thing browser search bar</p>
+          <p>3. hit the thing! button next to it to get started</p>
+          <p>some content will appear here</p>
+        </div>
+        
+<!--         <iframe id="goat-iframe" width="100%" height="100%" scrolling="no" src="https://goat-internet-backend.glitch.me/"></iframe> -->
+        <iframe id="goat-iframe" width="100%" height="100%" scrolling="yes" src="https://thing-internet-backend.glitch.me/"></iframe>
+
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="resize-iframe.js"></script>
+    
+  </body>
+</html>

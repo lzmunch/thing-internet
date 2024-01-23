@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <script type="text/javascript">
+    let data_json = {{data|tojson}}
+    console.log(data_json)
+    if ('html' in data_json){
+      document.write(data_json['html']);
+    }
+  </script>
+</html>

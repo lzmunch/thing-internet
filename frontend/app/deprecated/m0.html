@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GOAT INTERNET</title>
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://cdn.glitch.global/78167da7-6d04-4bcd-8dcd-cf8fe9b35f0e/goat_icon.svg?v=1703911119547"
+    />
+    <link rel="stylesheet" href="m.css" />
+    <script
+      src="https://code.jquery.com/jquery-2.2.1.min.js"
+      integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+      crossorigin="anonymous"
+    ></script>
+    <script src="iframeResizer.min.js"></script>
+  </head>
+  <body>
+    <div id="goat-browser-area">
+      <h1 id="goat-header">GOAT INTERNET BROWSER&#128016;</h1>
+      <p id="goat-timestamp"></p>
+      <form id="goat-form">
+        <label for="goat-search-input" class="goat-label">human site:</label>
+        <input
+          id="goat-search-bar"
+          type="text"
+          placeholder="https://www.some-url-that-exists.com"
+          name="goat-search-input"
+        />
+        <button id="search-btn" type="submit">goat!</button>
+      </form>
+      <hr />
+      <!--       <button id="glitch-remix" href="https://glitch.com">Remix this in Glitch</button> -->
+      <div class="goat-label">through the eyes of the goat:</div>
+    </div>
+    <div id="goat-content-container">
+      <div id="goat-content">
+        <div id="goat-placeholder" style="display:none;">
+          <p>Welcome to the Goat Browser!</p>
+          <p>some goaty content will appear here</p>
+          <p>
+            type something into the goat browser search bar and hit "goat!" to
+            get started
+          </p>
+        </div>
+<!--         <iframe id="goat-iframe" width="100%" scrolling="no" src="https://goat-internet-backend.glitch.me/"></iframe> -->
+        <iframe id="goat-iframe" src="https://goat-internet-backend.glitch.me/"></iframe>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script src="resize-iframe.js"></script>
+
+  </body>
+</html>
